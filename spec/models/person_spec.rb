@@ -28,4 +28,8 @@ RSpec.describe Person, type: :model do
 		expect(person.last_name).to eq('NewLastName')
 	end
 	
+	it 'has an array of phone numbers' do
+		expect(person.phone_numbers).to_eq([])
+	end
+	
 end
