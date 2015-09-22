@@ -15,6 +15,7 @@
 	<% @person.phone_numbers.each do |phone| %>
 
 		<li><%= phone.number %>< <%= link_to('edit', edit_phone_number_path(phone)) %>/li>
+		<li><%= link_to('delete', phone_number_path(phone_number), :method => "delete") %></li>
 	
 	<% end %>
 	
